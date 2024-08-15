@@ -22,7 +22,7 @@ body {
 }
 
 header {
-    background-color: #121212;
+    background-color: #000000;
     padding: 20px;
     color: #ffffff;
 }
@@ -41,10 +41,9 @@ header p {
 
 .main-content {
     padding: 20px;
-    background-color: #121212;
+    background: linear-gradient(to bottom, #000000, #434343);
     display: flex;
     flex-direction: column;
-
 }
 
 .about-me {
@@ -67,10 +66,17 @@ header p {
     text-align: left;
 }
 
+/* Centered content styles */
 .centered-content {
     text-align: center;
     width: 100%;
     max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* General styles for section */
+.section {
+    margin-bottom: 40px;
 }
 
 .section h2 {
@@ -80,31 +86,63 @@ header p {
     margin-bottom: 10px;
 }
 
-.section p,
+@keyframes pulse {
+    0% {
+        text-shadow: 0 0 0px rgba(255, 255, 255, 0);
+    }
+
+    50% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+
+    100% {
+        text-shadow: 0 0 0px rgba(255, 255, 255, 0);
+    }
+}
+
+.section h3 a {
+    color: #c4fb0e;
+    text-decoration: none;
+    animation: pulse 1.5s infinite;
+}
+
+.section h3 a:visited {
+    color: #c4fb0e;
+}
+
+.section h3 a:hover,
+.section h3 a:focus {
+    text-decoration: underline;
+}
+
+.section p {
+    text-align: left;
+}
+
 .section ul {
     font-size: 1.1em;
     line-height: 1.6;
-}
-
-.section ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .section ul li {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #c4fb0e;
 }
 
-iframe {
+.section iframe {
     display: block;
     margin: 0 auto;
+    max-width: 100%;
 }
 
 footer {
     text-align: center;
-    margin-top: 20px;
     padding: 10px 0;
-    background-color: #2f0470;
+    background-color: #c4fb0e;
     color: #ffffff;
     font-size: 0.9em;
 }
