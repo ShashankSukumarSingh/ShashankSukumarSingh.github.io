@@ -33,8 +33,7 @@ p {
     /* Ensure paragraph text uses Space Mono */
     text-decoration: none;
     /* Remove underline for p */
-    animation: pulse 1.5s infinite;
-    /* Add pulse animation */
+    /* Removed pulse animation */
 }
 
 h3 {
@@ -68,6 +67,25 @@ iframe {
     width: 100%;
     max-width: 1200px;
     height: 550px;
+    border: 3px solid #c4fb0e;
+    /* Add a border */
+    border-radius: 8px;
+}
+
+.text-box-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.text-box {
+    width: 48%;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #ceec0b;
+    border: 1px solid #c4fb0e;
+    border-radius: 8px;
+    box-sizing: border-box;
 }
 
 .go-back {
@@ -91,6 +109,13 @@ iframe {
 
 .section {
     margin: 40px 0;
+}
+
+.text-box ul {
+    font-size: 1.2em;
+    /* Increase the font size */
+    line-height: 1.5;
+    /* Adjust the line height for better readability */
 }
 
 .section h2 {
