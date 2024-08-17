@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARGET - Here Come Shooters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-games.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Rift of the Realms</h1>
+        <p>Rift of the Realms delves into the timeless conflict between light and dark, good and evil. Players are
+            thrust into a world where they must choose allegiance to either the radiant Light Realm or the ominous Dark
+            Realm. The objective is to silence the opposing realm to ensure the survival of their own. To achieve this,
+            players must breach the dimensional barrier, infiltrate enemy realm.</p>
+        <h3 style="color: #ceec0b;"><a href="https://youtu.be/ZyPv6KCGfas">Checkout the Game Demo</a></h3>
+        <iframe src="https://www.youtube.com/embed/3N_Hrqa1NNg?autoplay=1&mute=1" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+        <!-- Screenshot Section -->
+        <section class="screenshot-section">
+            <img src="media/ROR-SS.jpg" alt="Screenshot of the Game">
+        </section>
+
+        <!-- Key Features Section -->
+        <section class="key-features">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Multiplayer Mechanics: Implemented using Photon Unity Network (PUN) to ensure real-time player
+                    interactions and seamless synchronisation across all clients.</li>
+                <li>Dynamic Objectives: Each faction has distinct goals, requiring players to think strategically and
+                    adapt their plans as the game unfolds.</li>
+                <li>Player Movement & Combat: Players navigate the game world using WASD keys and can switch realms with
+                    the 'V' key. Real-time combat mechanics provide an engaging experience for players.</li>
+                <li>In-Game Economy: A dual-currency system rewards players with Silver and Gold Coins, allowing them to
+                    purchase items and enhancing competitive gameplay.</li>
+            </ul>
+        </section>
+
+        <!-- Game Mechanics and Objective System Section -->
+        <section class="game-mechanics">
+            <h2>Game Mechanics and Objective System</h2>
+            <ul>
+                <li>Light Realm: Players must collect machine parts scattered across the map and repair machines before
+                    the timer runs out. This requires teamwork and coordination.</li>
+                <li>Dark Realm: This faction's players need to use strategic positioning and combat to thwart the Light
+                    Realm's efforts, creating a dynamic and tense gameplay experience.</li>
+            </ul>
+        </section>
+
+        <section class="screenshot-section-1">
+            <img src="media/ROR-ss-1.jpg" alt="Screenshot of the Game">
+        </section>
+
+        <section class="game-mechanics">
+            <ul>
+                <p>Machine parts and repair progress are tracked via PUN RPCs, ensuring that all players receive
+                    real-time updates on each other's actions. Here is an example of the code for spawning repairable
+                    machines:
+                    To maintain player data across sessions, we integrated a REST API using Laravel, ensuring seamless
+                    data retrieval and storage.
+                    I designed intuitive UI elements using Adobe Illustrator, ensuring clear navigation and enhancing
+                    player engagement.
+                </p>
+            </ul>
+        </section>
+        <section class="screenshot-section-2">
+            <img src="media/ROR-ss-2.jpg" alt="Screenshot of the Game">
+            <img src="media/ROR-ss-3.jpg" alt="Screenshot of the Game">
+        </section>
+
+        <section class="game-mechanics">
+            <h2>What I learned</h2>
+            <p>
+                During the development of Rift of Realms, I had the opportunity to dive deep into the process of
+                creating online multiplayer games using Unity and Photon PUN. This experience taught me how to manage
+                real-time interactions effectively. I also worked on the backend, where I learned to integrate databases
+                with XAMPP and the Laravel framework, ensuring our game ran smoothly. Additionally, I explored the use
+                of VFX particles in Unity, which added a new level of visual appeal to the gameplay. Designing the
+                game's UI allowed me to apply and deepen my understanding of Game UI principles, resulting in a
+                user-friendly and visually engaging interface. Collaborating closely with a team of five was invaluable,
+                as it strengthened my ability to work within a team environment, improving our communication and
+                coordination throughout the project. This project was a comprehensive learning experience, helping me
+                grow both technically and as a team player in game development.
+            </p>
+        </section>
+
+        <a href="index.html" class="go-back">Go Back</a>
+    </div>
+</body>
+
+</html>
