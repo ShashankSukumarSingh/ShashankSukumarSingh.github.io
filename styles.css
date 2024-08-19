@@ -14,7 +14,8 @@ body {
     padding: 20px 40px;
 }
 
-.header-text {
+.header-text a {
+    text-decoration: none;
     color: #ceec0b;
 }
 
