@@ -309,3 +309,18 @@ footer {
 .technical-skills strong {
     color: #0be4ec;
 }
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 800px;
+    /* Set a maximum width to maintain video size */
+    height: auto;
+    /* Maintain aspect ratio */
+}

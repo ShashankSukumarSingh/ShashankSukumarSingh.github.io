@@ -63,14 +63,15 @@ h3 a:focus {
 
 iframe {
     display: block;
-    margin: 20px 0;
+    margin: 20px auto;
+    /* Center the iframe horizontally */
     width: 100%;
     max-width: 1200px;
     height: 550px;
     border: 3px solid #c4fb0e;
-    /* Add a border */
     border-radius: 8px;
 }
+
 
 .text-box-container {
     display: flex;
@@ -155,7 +156,8 @@ iframe {
 
 .screenshot-section-1 img {
     flex: 1;
-    max-width: 48%;
+    max-width: 70%;
+    /* Increased from 48% to 60% */
     height: auto;
     border: 3px solid #c4fb0e;
     border-radius: 5px;
@@ -163,7 +165,32 @@ iframe {
     transition: transform 0.3s ease;
 }
 
+
 .screenshot-section-1 img:hover {
+    transform: scale(1.05);
+}
+
+
+.screenshot-section-3 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.screenshot-section-3 img {
+    flex: 1;
+    max-width: 40%;
+    /* Increased from 48% to 60% */
+    height: auto;
+    border: 3px solid #c4fb0e;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+
+.screenshot-section-3 img:hover {
     transform: scale(1.05);
 }
 
