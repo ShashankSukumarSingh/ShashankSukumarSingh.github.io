@@ -4,7 +4,15 @@ body {
     font-family: 'Space Mono', monospace;
     margin: 0;
     padding: 0;
-    color: #0be4ec;
+    color: #0be4ec; /* Default text color */
+    background-color: #000; /* Ensures black background */
+}
+
+/* Header styles */
+header {
+    background-color: #000000;
+    padding: 20px;
+    color: #ffffff;
 }
 
 .header-content {
@@ -12,11 +20,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
+    flex-wrap: wrap;
 }
 
 .header-text a {
     text-decoration: none;
-    color: #ceec0b;
+    color: #ceec0b; /* Corrected link color */
 }
 
 .icons-container {
@@ -24,44 +33,44 @@ body {
     gap: 20px;
 }
 
-header {
-    background-color: #000000;
-    padding: 20px;
-    color: #ffffff;
+.icons-container a {
+    color: #ceec0b; /* Ensure icons use the correct color */
+    font-size: 24px; /* Adjust icon size here */
 }
 
 header h1 {
     font-size: 2.5em;
-    font-family: 'Space Mono', monospace;
     color: #ceec0b;
 }
 
 header p {
     font-size: 1.2em;
-    font-family: 'Space Mono', monospace;
     color: #ceec0b;
 }
 
+/* Main content styles */
 .main-content {
     padding: 20px;
     background-color: #000000;
+    color: #0be4ec; /* Ensure correct text color in the main content */
     display: flex;
     flex-direction: column;
 }
 
+/* Project heading */
 .project-heading {
     font-size: 2em;
     color: #ceec0b;
     margin-bottom: 20px;
 }
 
+/* Skills container */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     padding: 0;
-    margin: 0;
 }
 
 .skill-logo {
@@ -75,18 +84,18 @@ header p {
     transform: scale(1.1);
 }
 
+/* About me section */
 .about-me {
     display: flex;
     align-items: center;
     padding: 0 40px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .profile-pic {
     width: 250px;
-    /* Increased from 200px to 250px */
     height: 250px;
-    /* Increased from 200px to 250px */
     border-radius: 50%;
     margin-right: 40px;
     object-fit: cover;
@@ -95,12 +104,11 @@ header p {
 .about-content {
     flex: 1;
     text-align: left;
-    font-family: 'Space Mono', monospace;
     font-size: 1.2em;
-    /* Increased font size */
+    color: #0be4ec; /* Ensure text color is applied */
 }
 
-
+/* Centered content section */
 .centered-content {
     text-align: center;
     width: 100%;
@@ -110,6 +118,7 @@ header p {
 
 .section {
     margin-bottom: 40px;
+    color: #0be4ec; /* Ensure the section text color is correct */
 }
 
 .section h2 {
@@ -117,44 +126,9 @@ header p {
     font-size: 1.8em;
     padding-bottom: 5px;
     margin-bottom: 10px;
-    font-family: 'Space Mono', monospace;
 }
 
-@keyframes pulse {
-    0% {
-        text-shadow: 0 0 0px rgba(255, 255, 255, 0);
-    }
-
-    50% {
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-    }
-
-    100% {
-        text-shadow: 0 0 0px rgba(255, 255, 255, 0);
-    }
-}
-
-.section h3 a {
-    color: #c4fb0e;
-    text-decoration: none;
-    animation: pulse 1.5s infinite;
-    font-family: 'Space Mono', monospace;
-}
-
-.section h3 a:visited {
-    color: #c4fb0e;
-}
-
-.section h3 a:hover,
-.section h3 a:focus {
-    text-decoration: underline;
-}
-
-.section p {
-    text-align: left;
-    font-family: 'Space Mono', monospace;
-}
-
+/* List styles for sections */
 .section ul {
     display: flex;
     flex-wrap: wrap;
@@ -162,6 +136,7 @@ header p {
     padding: 0;
     margin: 0;
     list-style-type: none;
+    justify-content: space-between;
 }
 
 .section ul li {
@@ -171,36 +146,65 @@ header p {
     background-color: #000;
     border: 2px solid #c4fb0e;
     text-align: left;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .section ul li h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
-    font-family: 'Space Mono', monospace;
+    color: #0be4ec; /* Corrected list item title color */
 }
 
 .section ul li p {
     font-size: 1em;
     margin-bottom: 10px;
     flex-grow: 1;
-    font-family: 'Space Mono', monospace;
+    color: #0be4ec; /* Corrected paragraph text color */
 }
 
 .section ul li img {
     width: 100%;
-    height: 100%;
+    height: auto;
     border-radius: 5px;
     object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Image hover effect */
+.section ul li img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Link styles */
+a {
+    color: #ceec0b; /* Ensure all anchor links are the correct color */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+/* Responsive styles */
 @media (max-width: 1200px) {
     .section ul li {
-        height: auto;
         flex: 1 1 45%;
+    }
+
+    .header-content {
+        padding: 10px 20px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .about-me {
+        padding: 10px;
     }
 }
 
@@ -212,6 +216,23 @@ header p {
     .section ul li {
         flex: 1 1 100%;
         margin: 10px 0;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-me {
+        flex-direction: column;
+    }
+
+    .profile-pic {
+        margin-bottom: 20px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
     }
 }
 
@@ -248,23 +269,6 @@ footer {
     background-color: #c4fb0e;
     color: #ffffff;
     font-size: 0.9em;
-    font-family: 'Space Mono', monospace;
-}
-
-.icons-container {
-    display: flex;
-    gap: 25px;
-    margin: 20px;
-}
-
-.social-icon {
-    font-size: 45px;
-    color: #c4fb0e;
-    transition: color 0.3s;
-}
-
-.social-icon:hover {
-    color: #f8f8f8;
 }
 
 .download-resume {
@@ -278,12 +282,6 @@ footer {
     border-radius: 5px;
     background-color: #c4fb0e;
     transition: background-color 0.3s, color 0.3s;
-    font-family: 'Space Mono', monospace;
-}
-
-.download-resume i {
-    font-size: 18px;
-    margin-right: 8px;
 }
 
 .download-resume:hover {
@@ -296,31 +294,14 @@ footer {
     padding: 20px;
     border: 2px solid #c4fb0e;
     color: #c4fb0e;
-    font-family: 'Space Mono', monospace;
     line-height: 1.6em;
     font-size: 1em;
     margin-bottom: 40px;
 }
 
-.technical-skills p {
-    margin: 10px 0;
-}
-
-.technical-skills strong {
-    color: #0be4ec;
-}
-
-.video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
 .video-container iframe {
     width: 100%;
     max-width: 800px;
-    /* Set a maximum width to maintain video size */
     height: auto;
     /* Maintain aspect ratio */
 }
