@@ -35,7 +35,13 @@ header {
 
 .icons-container a {
     color: #ceec0b; /* Ensure icons use the correct color */
-    font-size: 24px; /* Adjust icon size here */
+    font-size: 40px; /* Increased icon size significantly */
+/* Padding around the icons */
+    transition: transform 0.3s ease; /* Smooth transformation effect */
+}
+
+.icons-container a:hover {
+    transform: scale(1.1); /* Slight enlargement on hover */
 }
 
 header h1 {
@@ -269,24 +275,6 @@ footer {
     background-color: #c4fb0e;
     color: #ffffff;
     font-size: 0.9em;
-}
-
-.download-resume {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #000;
-    font-size: 18px;
-    border: 1px solid #000;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #c4fb0e;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.download-resume:hover {
-    background-color: #c4fb0e;
-    color: #fff;
 }
 
 .technical-skills {
