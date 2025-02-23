@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-games.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-text">
+                <h1><a href="index.html">Shashank Kumar Sukumar Singh</a></h1>
+                <h2 style="color: #0be4ec;">Game Developer / Graphic Designer</h2>
+            </div>
+            <div class="icons-container">
+                <a href="https://linkedin.com/in/shashank-kumar-singh-696b562a9" class="social-icon" target="_blank"
+                   title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/shashank-8214" class="social-icon" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="media/resume/Shashank_CV.docx" target="_blank" class="download-resume"
+                   download>
+                    <i class="fas fa-download"></i>
+                    <span>Resume</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Abhimanyu - War Cry</h1>
+
+        <iframe src="https://www.youtube.com/embed/NbQJv0HfkG0?autoplay=1&mute=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
+
+
+        <br>
+
+        <div class="text-box-container">
+            <div class="text-box">
+                <ul>
+                    <li><strong>Introduction</strong></li>
+                </ul>
+                <p style="color: #0be4ec;">Abhimanyu - War Cry is a single player, third person RPG that seamlessly blends the rich culture of Indian mythology. The game features a dual-input system, offering both traditional controls and real-time voice commands. This ensures the experience is not only engaging but also accessible to a diverse audience, including individuals with physical disabilities. Drawing inspiration from the Mahabharata, players step into the role of the legendary warrior Abhimanyu as he undertakes a heroic quest to defend the Fort of Matsya. Powered by Microsoft Azure’s advanced services, the game provides a multilingual, voice-controlled experience, allowing for smooth and responsive gameplay.</p>
+            </div>
+            <div class="text-box">
+                <ul>
+                    <li><strong>Project Title:</strong> <span style="color: #0be4ec;">Enhancing Accessibility in Gaming: Development of a Dual Input PC Game with Traditional Controls and Voice Commands</span>
+                    </li>
+                    <li><strong>Role:</strong> <span style="color: #0be4ec;">Programmer / Designer / Art</span></li>
+                    <li><strong>Platform:</strong> <span style="color: #0be4ec;">PC</span></li>
+                    <li><strong>Technologies Used:</strong> <span style="color: #0be4ec;">Unity 3D C#, Azure Speech to Text, Azure Translator AI, Azure CLU ( NLP ), GitHub, Mixamo</span></li>
+                </ul>
+            </div>
+
+
+        </div>
+        <section class="key-features">
+
+            <h2>Key Features</h2>
+                <li>Dual input system:  • Voice Only Mode
+                    • Blended ( Keyboard & Mouse + Voice )
+                    </span>
+                </li>
+                <li>Voice Based Navigation.</span></li>
+                <li>Advanced Combat System with multiple combat types like Melee Combo,Ranged and Special Ability Attacks.</span></li>
+                <li>Unique Ability system, where abilities to be triggered through voice commands.</span></li>
+                <li>Realtime Multilingual Command Processing.</li>
+                <li>Narrative driven levels signifying Indian Mythology.</li>
+
+
+        </section>
+        <!-- <h3 style="color: #ceec0b;">Checkout the Game Demo</a></h3>
+        <iframe src="https://www.youtube.com/embed/ZyPv6KCGfas?autoplay=1&mute=1" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+         Screenshot Section -->
+        <!-- <section class="screenshot-section">
+            <img src="media/ROR-SS.jpg" alt="Screenshot of the Game">
+        </section> -->
+
+        <section class="screenshot-section-2">
+            <img src="media/AbhimanyuWarCry/1.png" alt="Screenshot of the Game">
+            <img src="media/AbhimanyuWarCry/2.jpg" alt="Screenshot of the Game">
+            <img src="media/AbhimanyuWarCry/3.png" alt="Screenshot of the Game">
+        </section>
+
+        <!-- Key Features Section -->
+        <section class="key-features">
+            <h2>DEVELOPMENT PROCESS</h2>
+            <ul>
+                <p style="color: #0be4ec;">The project followed an iterative Agile methodology, enabling flexibility and continuous improvement. Each game mechanic was first developed using traditional manual controls, after which voice-based functionality was integrated, ensuring robust and cohesive gameplay.
+
+                    The development process began with setting up Speech-to-Text functionality using Azure Cognitive Services over Open AI’s Whisper due to Azure’s low latency feature (0 - 0.5 Sec ) and Whisper lacked realtime processing.
+                    Azure CLU proved to be easier to integrate, with a simpler setup and efficient training process. Initial efforts focused on training a single intent model for navigation, utilising one intent (“move”) and multiple entities for locations and characters. This approach yielded poor results, as the model struggled with accuracy.
+
+                </p>
+                <section class="screenshot-section-1">
+                <img src="media/AbhimanyuWarCry/4.jpg" alt="Screenshot of the Game">
+                </section>
+
+                <p style="color: #0be4ec;">Utterances were categorised into different intents, leading to improved performance. While categorisation reduced errors, there were still occasional mispredictions caused by similar utterances.</p>
+                <section class="screenshot-section-1">
+                    <img src="media/AbhimanyuWarCry/5.png" alt="Screenshot of the Game">
+                </section>
+                <p style="color: #0be4ec;"> Azure Translator API was subsequently integrated, enabling multilingual support and allowing players to issue
+                    commands in their preferred language. After navigation and language functionality were established, the combat systems were implemented.</p>
+                <section class="screenshot-section-1">
+                    <img src="media/AbhimanyuWarCry/6.jpg" alt="Screenshot of the Game">
+                </section>
+
+            </ul>
+
+        </section>
+
+        <section class="screenshot-section-1">
+
+        </section>
+
+        <section class="game-mechanics">
+            <h2>ACKNOWLEDGEMENTS</h2>
+            <li>Professor Vasilis Argyriou of Kingston University for Supervising this project.</li>
+            <li>Mr. Akos Nagy of Kingston University for his advice on integrating NLP.</li>
+            <li>Mr. Raghav Suryashekar for advice on rendering large crowds.</li>
+            <li>Mr. Shivamsh for his exceptional Music and Sound Design.</li>
+            <li>Sailing Arts Studio for creating the narrative video scenes.</li>
+        </section>
+
+        <a href="index.html" class="go-back">Go Back</a>
+    </div>
+</body>
+
+</html>
