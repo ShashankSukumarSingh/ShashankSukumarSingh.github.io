@@ -79,8 +79,9 @@ iframe {
     display: inline-block;
     padding: 10px 20px;
     font-size: 18px;
+    font-weight: bold; /* Make text bold */
     text-decoration: none;
-    color: #000;
+    color: #ffffff; /* Pure white */
     background-color: #c4fb0e;
     border-radius: 5px;
     border: 1px solid #000;
@@ -88,10 +89,16 @@ iframe {
     font-family: 'Space Mono', monospace;
 }
 
-.go-back:hover {
+.go-back {
+    color: #000000 !important; /* Force black text */
+    opacity: 1 !important; /* Ensure full opacity */
+}
+
+
+/*.go-back:hover {
     background-color: #000;
     color: #c4fb0e;
-}
+}*/
 
 .section {
     margin: 40px 0;
@@ -265,3 +272,69 @@ a:hover {
 a:visited {
     color: #ceec0b; /* For visited links */
 }
+
+.four-column-list {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.four-column-list li {
+    flex: 1 1 24%; /* 4 items in a row */
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #000;
+    border: 2px solid #c4fb0e;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.four-column-list li img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.four-column-list li h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #c4fb0e;
+}
+
+.four-column-list li p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    flex-grow: 1;
+    color: #0be4ec;
+}
+
+/* Make sure they stay in a row for larger screens */
+@media (max-width: 1200px) {
+    .four-column-list {
+        flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    }
+
+    .four-column-list li {
+        flex: 1 1 45%; /* 2 items per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .four-column-list {
+        flex-direction: column;
+    }
+
+    .four-column-list li {
+        flex: 1 1 100%; /* 1 item per row */
+    }
+}
+
